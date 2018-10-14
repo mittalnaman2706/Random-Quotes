@@ -1,0 +1,151 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  
+<style>
+  
+#ab {
+  background-color: co[i];
+}
+body{
+  background-image: url('https://drmarkpbarry.files.wordpress.com/2014/11/sun-burst-with-rays-form-clouds-vector.jpg');
+  background-size:100%;
+	font-family:"Open Sans", sans-serif;
+}
+.di {
+  box-sizing: border-box;
+  margin: auto;
+  margin-left: 300px;
+  width: 59%;
+  padding: 30px;
+}
+.bi {
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 10px;
+  margin-left: 770px;
+  width: 20%;
+  padding: 3px;
+}
+
+h2 {
+  color: yellow;
+  font-family: Lobster;
+  font-size: 60px;
+  margin-left: 380px;
+   margin-top:20px;
+}
+.m {
+   font-family:Lobster;
+   color:red;
+  font-size: 45px;
+  margin-top: 70px;
+  margin-left: 300px;
+   
+}
+.n {
+  margin-top: 50px;
+  margin-left: 600px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  text-align: center;
+  font-size: 20px;
+}
+.f {
+  font-size: 24px;
+  color:white;
+}
+.quote-text {
+  i {
+    font-size: 1em;
+    margin-right: 0.4em;
+  }
+  text-align: center;
+  width: 450px;
+  height: auto;
+  clear: both;
+  font-weight: 500;
+  font-size: 1.75em;
+}
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+<script>
+
+  
+var co = ['#16a085', '#27ae60', '#2c3e50', '#f39c12', '#e74c3c', '#9b59b6', '#FB6964', '#342224', "#472E32", "#BDBB99", "#77B1A9", "#73A857"];
+var arr=[{
+  "quote":"“If you judge people, you have no time to love them.”","author":"― Mother Teresa",
+},{
+  "quote":"“Sometimes the questions are complicated and the answers are simple.”","author":"― Dr. Seuss",
+},{
+   "quote":"“Success is most often achieved by those who don't know that failure is inevitable.”","author":"―Coco Chanel"
+},{
+  "quote":"“If you can't explain it to a six year old, you don't understand it yourself.”","author":"― Albert Einstein",
+},{
+  "quote":"“Logic will get you from A to Z; imagination will get you everywhere.”","author":"― Albert Einstein",
+},{
+  "quote":"“Live as if you were to die tomorrow. Learn as if you were to live forever.”","author":"― Mahatma Gandhi"},
+           ,{
+  "quote":"“If you are not willing to risk the usual, you will have to settle for the ordinary.”","author":"― Jim Rohn"
+}       ,{
+  "quote":"“All our dreams can come true if we have the courage to pursue them.”","author":"― Walt Disney"
+}       ,{
+  "quote":"“Success is walking from failure to failure with no loss of enthusiasm.”","author":"― Winston Churchill"
+}   ,{"quote":"“Do Hardwork And Don't Worry About The Result.”","author":"―Naman Mittal"}    ,{
+  "quote":"“The difference between winning and losing is most often not quitting.”","author":"― Walt Disney"
+}       ,{
+  "quote":"“The distance between insanity and genius is measured only by success.”","author":"― Bruce Feirstein"
+}       ,{
+  "quote":"“The way I see it, if you want the rainbow, you gotta put up with the rain.”","author":"― Dolly Parton"
+},{
+  "quote":"“You must expect great things of yourself before you can do them.”","author":"― Michael Jordan"
+},{
+  "quote":"“It often requires more courage to dare to do right than to fear to do wrong.”","author":"― Abraham Lincoln"
+},{
+  "quote":"“Success is the sum of small efforts, repeated day-in and day-out.”","author":"― Robert Collier"
+}];
+function asd(){
+  $(document).ready(function(){
+   $("#quote").html(arr[i].quote);
+   $("#author").html(arr[i].author);
+     $("#text").text(r.quote);
+    $("#ab").animate({
+        backgroundColor: co[i],
+        color: co[i]
+      }, 1000);
+  });
+};
+var i=0;
+$(document).ready(function(){
+  $("#change").click(function(){
+    i=Math.floor(Math.random()*arr.length);
+    asd();
+  });
+});
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<div id="ab">
+  <div class = "row text-center">
+    <h2 >QUOTES FOR A BETTER LIFE </h2>
+  </div>
+  <div class="quote-text text-center">
+    <i class="fa fa-quote-left"> </i><span id="text"></span>
+  </div>
+  <div class = "row text-center">
+    <div class = " col-xs-12 di m well" id="quote">
+       Good Quotes By Great People!!!
+  </div>  
+	<!--  <div class="col-xs-12 f bi well" id="author">-Author</div> </div>   -->
+  
+  <div class = "row text-center">
+    <div class = "col-xs-12">
+      <button id = "change" class = "btn text-center n btn-success">Another Quote
+      </button>
+    </div>
+  </div>
+</div>
